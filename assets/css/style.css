@@ -1,21 +1,5 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
-  /**
-   * colors
-   */
-
-  /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right,
@@ -840,6 +824,8 @@ main {
 .timeline-item {
   position: relative;
 }
+
+
 
 .timeline-item:not(:last-child) {
   margin-bottom: 20px;
@@ -1933,7 +1919,7 @@ textarea.form-input::-webkit-resizer {
    */
 
   main {
-    max-width: 1200px;
+    max-width: 1300px;
     margin-inline: auto;
     display: flex;
     justify-content: center;
