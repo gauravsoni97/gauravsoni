@@ -2005,8 +2005,13 @@ textarea.form-input::-webkit-resizer {
 
 
 
-.myavatarimg{
-  border-radius: 20px;
-padding: .2rem;
-width:160px !important;
+@media screen and (max-width:600px) {
+  .avatar-box {
+    border-radius: 20px;
+  }
+  .avatar-box img{
+    padding: .2rem;
+    border-radius: 20px !important;
+  }
+  
 }
