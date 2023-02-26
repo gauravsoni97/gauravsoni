@@ -2045,7 +2045,12 @@ textarea.form-input::-webkit-resizer {
   width: 100%;
 }
 
-.project_features {
+.project_features_box ion-icon{
+  margin-top: .3rem;
+  margin-right: 1rem;
+}
+.project_features_box {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  margin: .5rem 0;
 }
