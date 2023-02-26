@@ -334,7 +334,6 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
 }
 
 .info-content .name {
@@ -1412,9 +1411,11 @@ textarea.form-input::-webkit-resizer {
   .avatar-box {
     border-radius: 30px;
   }
-
+  
   .avatar-box img {
     width: 120px;
+    border-radius: 30px;
+    padding: .2rem;
   }
 
   .info-content .name {
@@ -1951,10 +1952,6 @@ textarea.form-input::-webkit-resizer {
     flex-direction: column;
   }
 
-  .avatar-box img {
-    width: 150px;
-  }
-
   .info-content .name {
     white-space: nowrap;
     text-align: center;
@@ -2004,4 +2001,12 @@ textarea.form-input::-webkit-resizer {
   .timeline-text {
     max-width: 700px;
   }
+}
+
+
+
+.myavatarimg{
+  border-radius: 20px;
+padding: .2rem;
+width:160px !important;
 }
