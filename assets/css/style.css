@@ -1,6 +1,4 @@
-
 :root {
-
   --bg-gradient-onyx: linear-gradient(
     to bottom right,
     hsl(240, 1%, 25%) 3%,
@@ -824,8 +822,6 @@ main {
   position: relative;
 }
 
-
-
 .timeline-item:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -882,8 +878,8 @@ main {
   padding: 20px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
-  gap:1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
 }
 
 .skills-item {
@@ -891,14 +887,12 @@ main {
   align-items: center;
   justify-content: flex-start;
 }
-.skills-item .skills_avatar{
-    background: var(--bg-gradient-onyx);
-    border-radius: 14px;
-    box-shadow: var(--shadow-1);
-    padding: .8rem;
-    margin-right: .8rem;
-  
-  
+.skills-item .skills_avatar {
+  background: var(--bg-gradient-onyx);
+  border-radius: 14px;
+  box-shadow: var(--shadow-1);
+  padding: 0.8rem;
+  margin-right: 0.8rem;
 }
 
 .skills-item-text {
@@ -1411,11 +1405,11 @@ textarea.form-input::-webkit-resizer {
   .avatar-box {
     border-radius: 30px;
   }
-  
+
   .avatar-box img {
     width: 120px;
     border-radius: 30px;
-    padding: .2rem;
+    padding: 0.2rem;
   }
 
   .info-content .name {
@@ -1605,7 +1599,6 @@ textarea.form-input::-webkit-resizer {
     left: -43px;
   }
 
-  
   /**
    * #PORTFOLIO, BLOG
    */
@@ -2003,15 +1996,56 @@ textarea.form-input::-webkit-resizer {
   }
 }
 
-
-
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .avatar-box {
     border-radius: 20px;
   }
-  .avatar-box img{
-    padding: .2rem;
+  .avatar-box img {
+    padding: 0.2rem;
     border-radius: 20px !important;
   }
-  
+}
+
+/* -----------------------  New Projects section -------------- */
+
+.all-projects {
+  padding: 3rem;
+}
+
+.project_box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 1rem;
+  min-height: 400px;
+  width: 100%;
+}
+
+.project_img {
+  background-image: url("/assets/images/project-1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 1rem;
+  height: 400px;
+  width: 50%;
+}
+
+.project-desc {
+  width: 50%;
+  padding: 1rem 2rem;
+  color: var(--light-gray);
+}
+
+.project-link-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.project_features {
+  display: flex;
+  align-items: center;
 }
