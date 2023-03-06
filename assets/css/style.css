@@ -2009,7 +2009,7 @@ textarea.form-input::-webkit-resizer {
 /* -----------------------  New Projects section -------------- */
 
 .all-projects {
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .project_box {
@@ -2022,17 +2022,17 @@ textarea.form-input::-webkit-resizer {
 }
 
 .project_img {
-  background-image: url("/assets/images/project-1.png");
+  background-image: url("/assets/images/projects/googlekeepclone.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   border-radius: 1rem;
   height: 400px;
-  width: 50%;
+  width: 45%;
 }
 
 .project-desc {
-  width: 50%;
+  width: 65%;
   padding: 1rem 2rem;
   color: var(--light-gray);
 }
@@ -2045,6 +2045,11 @@ textarea.form-input::-webkit-resizer {
   width: 100%;
 }
 
+
+.project-link-btns   .form-btn {
+  margin-right: 1rem;
+}
+
 .project_features_box ion-icon{
   margin-top: .3rem;
   margin-right: 1rem;
@@ -2053,4 +2058,126 @@ textarea.form-input::-webkit-resizer {
   display: flex;
   align-items: flex-start;
   margin: .5rem 0;
+}
+
+
+@media  screen and (max-width:900px) {
+  
+.all-projects {
+  padding:1rem;
+}
+
+.project_box {
+  display: flex;
+  align-items: flex-start;
+  justify-content:center;
+  flex-wrap: wrap;
+  border-radius: 1rem;
+  min-height: 400px;
+  width: 100%;
+}
+
+.project_img {
+  background-image: url("/assets/images/projects/googlekeepclone.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 1rem;
+  height: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.project-desc {
+  width: 100%;
+  padding: 1rem;
+  color: var(--light-gray);
+}
+
+.project-link-btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.project_features_box ion-icon{
+  margin-top: .3rem;
+  margin-right: .5rem;
+}
+.project_features_box {
+  display: flex;
+  align-items: flex-start;
+  margin: .5rem 0;
+}
+
+
+}
+@media  screen and (max-width:600px) {
+  
+.all-projects {
+  padding:0;
+}
+
+.project_box {
+  display: flex;
+  align-items: flex-start;
+  justify-content:center;
+  flex-wrap: wrap;
+  border-radius: 1rem;
+  min-height: 400px;
+  width: 100%;
+}
+
+.project_img {
+  background-image: url("/assets/images/projects/googlekeepclone.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 1rem;
+  height: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.project-desc {
+  width: 100%;
+  padding: .5rem;
+  margin-top: 1rem;
+  color: var(--light-gray);
+}
+
+.project-link-btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.project_features_box ion-icon{
+  margin-top: .3rem;
+  margin-right: .5rem;
+}
+.project_features_box {
+  display: flex;
+  align-items: flex-start;
+  margin: .5rem 0;
+}
+
+
+.project-link-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.project-link-btns button{
+  width: 70vw;
+  margin: .5rem auto
+  ;
+}
+
 }
