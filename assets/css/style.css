@@ -2019,16 +2019,22 @@ textarea.form-input::-webkit-resizer {
   border-radius: 1rem;
   min-height: 400px;
   width: 100%;
+  margin: 2rem 0;
 }
 
 .project_img {
-  background-image: url("/assets/images/projects/googlekeepclone.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   border-radius: 1rem;
   height: 400px;
   width: 45%;
+}
+.project_img1 {
+  background-image: url("/assets/images/projects/googlekeepclone.png");
+}
+.project_img2 {
+  background-image: url("/assets/images/projects/googlekeepclone.png");
 }
 
 .project-desc {
