@@ -2036,6 +2036,9 @@ textarea.form-input::-webkit-resizer {
 .project_img2 {
   background-image: url("/assets/images/projects/moneymanagement.png");
 }
+.project_img3 {
+  background-image: url("/assets/images/projects/macos\ ui.png");
+}
 
 .project-desc {
   width: 50%;
