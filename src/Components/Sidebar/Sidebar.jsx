@@ -1,13 +1,15 @@
 import React from "react";
 import "../../index.css";
 
+import myavatar from "../../imgs/my-avatar.png"
+
 const Sidebar = () => {
   return (
     <>
       <aside className="sidebar" data-sidebar>
         <div className="sidebar-info">
           <figure className="avatar-box">
-            {/* <img src="./assets/images/my-avatar.png" alt="Gaurav Soni" width="80px"> */}
+            <img src={myavatar} alt="Gaurav Soni" width="80px" />
           </figure>
 
           <div className="info-content">
@@ -37,7 +39,10 @@ const Sidebar = () => {
               <div className="contact-info">
                 <p className="contact-title">Email</p>
 
-                <a href="mailto:gauravsoni8414@gmail.com" className="contact-link">
+                <a
+                  href="mailto:gauravsoni8414@gmail.com"
+                  className="contact-link"
+                >
                   gauravsoni8414@gmail.com
                 </a>
               </div>
@@ -73,38 +78,11 @@ const Sidebar = () => {
           </ul>
 
           <div className="separator"></div>
+          <div className="info-content">
+            <p className="title">Download CV</p>
+          </div>
 
-          <ul className="social-list">
-            <li className="social-item">
-              <a
-                href="https://www.linkedin.com/in/thegauravsoni/"
-                target="_blank"
-                className="social-link"
-              >
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-
-            <li className="social-item">
-              <a
-                href="https://github.com/gauravsoni97"
-                target="_blank"
-                className="social-link"
-              >
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-            </li>
-
-            <li className="social-item">
-              <a
-                href="https://www.instagram.com/gauravsoni.97/"
-                target="_blank"
-                className="social-link"
-              >
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-          </ul>
+          
         </div>
       </aside>
     </>

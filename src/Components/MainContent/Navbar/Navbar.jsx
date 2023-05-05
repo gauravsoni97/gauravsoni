@@ -1,33 +1,33 @@
 import React from "react";
 import "../../../index.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <ul className="navbar-list">
         <li className="navbar-item">
-          <Link to="/" className="navbar-link ">
+          <NavLink to="/" className="navbar-link " activeClassName="active-link">
             About
-          </Link>
+          </NavLink>
         </li>
 
         <li className="navbar-item">
-          <Link to="/resume" className="navbar-link" >
+          <NavLink to="/resume" className="navbar-link"  activeClassName="active-link" >
             Resume
-          </Link>
+          </NavLink>
         </li>
 
         <li className="navbar-item">
-        <Link to="/portfolio" className="navbar-link">
+        <NavLink to="/portfolio" className="navbar-link"  activeClassName="active-link">
             Portfolio
-          </Link>
+          </NavLink>
         </li>
 
         <li className="navbar-item">
-          <Link to="/contact" className="navbar-link">
+          <NavLink to="/contact" className="navbar-link"  activeClassName="active-link">
             Contact
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
