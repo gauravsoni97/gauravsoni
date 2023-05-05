@@ -2,6 +2,8 @@ import React from "react";
 import "../../index.css";
 
 import myavatar from "../../imgs/my-avatar.png"
+import resume from "../../docs/Gaurav Soni Frontend Developer .pdf";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -79,7 +81,11 @@ const Sidebar = () => {
 
           <div className="separator"></div>
           <div className="info-content">
-            <p className="title">Download CV</p>
+            <p className="title">
+              <a href={resume} download style={{color:"white"}}>
+              Download CV
+              </a>
+              </p>
           </div>
 
           
