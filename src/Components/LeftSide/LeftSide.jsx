@@ -5,7 +5,7 @@ const LeftSide = () => {
     <div>
       <div className="top__section">
         <img src="" alt="" />
-        <h1 className="my__name">Gaurav Soni</h1>
+        <h1 className="my__name">Gaurav</h1>
         <h2 className="my__role">Frontend Developer</h2>
       </div>
       <div className="bottom__section">
