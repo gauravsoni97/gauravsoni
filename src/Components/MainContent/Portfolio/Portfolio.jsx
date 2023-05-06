@@ -1,6 +1,11 @@
 import React from "react";
 import "../../../index.css";
 
+import googlekeepclone from "../../../imgs/projects/googlekeepclone.png"
+import moneymanagement from "../../../imgs/projects/moneymanagement.png"
+import macosui from "../../../imgs/projects/macosui.png"
+import macosui2 from "../../../imgs/projects/macosui2.png"
+
 const Portfolio = () => {
   return (
     <article className="portfolio" data-page="portfolio">
@@ -15,7 +20,9 @@ const Portfolio = () => {
         <div className="all-projects">
           {/* Project 1 */}
           <div className="project_box  service-item ">
-            <div className="project_img1 project_img"></div>
+            <div className="project_img1 project_img" style={{backgroundImage:`url(${googlekeepclone})`}}>
+              
+            </div>
             <div className="project-desc">
               <h2>Google Keep Clone</h2>
               <p className="timeline-text">
@@ -53,7 +60,7 @@ const Portfolio = () => {
           </div>
           {/* Project 2 */}
           <div className="project_box  service-item ">
-            <div className="project_img project_img2"></div>
+            <div className="project_img project_img2" style={{backgroundImage:`url(${moneymanagement})`}}></div>
             <div className="project-desc">
               <h2>Money Management</h2>
               <p className="timeline-text">
@@ -94,7 +101,7 @@ const Portfolio = () => {
           </div>
           {/* Project 3 */}
           <div className="project_box  service-item ">
-            <div className="project_img project_img3"></div>
+            <div className="project_img project_img3" style={{backgroundImage:`url(${macosui2})`}}></div>
             <div className="project-desc">
               <h2>macOS UI Clone</h2>
               <p className="timeline-text">

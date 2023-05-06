@@ -4,6 +4,11 @@ import "../../index.css";
 import myavatar from "../../imgs/my-avatar.png"
 import resume from "../../docs/Gaurav Soni Frontend Developer .pdf";
 import { Link } from "react-router-dom";
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+
+import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
 
 const Sidebar = () => {
   return (
@@ -22,7 +27,7 @@ const Sidebar = () => {
             <p className="title">Frontend Web Developer</p>
           </div>
 
-          <button className="info_more-btn" data-sidebar-btn>
+          <button className="info_more-btn">
             <span>Show Contacts</span>
 
             <ion-icon name="chevron-down"></ion-icon>
@@ -35,7 +40,7 @@ const Sidebar = () => {
           <ul className="contacts-list">
             <li className="contact-item">
               <div className="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
+              <MailOutlineIcon/>
               </div>
 
               <div className="contact-info">
@@ -52,7 +57,7 @@ const Sidebar = () => {
 
             <li className="contact-item">
               <div className="icon-box">
-                <ion-icon name="logo-whatsapp"></ion-icon>
+              <WhatsAppIcon/>
               </div>
 
               <div className="contact-info">
@@ -68,7 +73,7 @@ const Sidebar = () => {
             </li>
             <li className="contact-item">
               <div className="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
+              <LocationOnIcon/>
               </div>
 
               <div className="contact-info">
@@ -81,8 +86,10 @@ const Sidebar = () => {
 
           <div className="separator"></div>
           <div className="info-content">
-            <p className="title">
-              <a href={resume} download style={{color:"white"}}>
+            <p className="title" style={{ display:"flex", alignItems:"center"}}>
+
+            <DownloadRoundedIcon style={{width:"16px"}}/>
+              <a href={resume} download style={{color:"white", marginLeft:".5rem"}}>
               Download CV
               </a>
               </p>

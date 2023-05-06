@@ -1429,10 +1429,10 @@ textarea.form-input::-webkit-resizer {
     padding: 10px 15px;
   }
 
-  .info_more-btn span {
+  /* .info_more-btn span {
     display: block;
     font-size: var(--fs-8);
-  }
+  } */
 
   .info_more-btn ion-icon {
     display: none;

@@ -1,5 +1,6 @@
 import React from 'react'
 import "../../../index.css";
+import SendRoundedIcon from '@mui/icons-material/SendRounded';
 
 const Contact = () => {
   return (
@@ -23,7 +24,7 @@ const Contact = () => {
         <br />
         <textarea autoComplete="off" name="message" className="form-input" placeholder="Your Message" required data-form-input defaultValue={""} />
         <button className="form-btn" type="submit">
-          <ion-icon name="paper-plane" />
+        <SendRoundedIcon/>
           <span>Send Message</span>
         </button>
       </form>

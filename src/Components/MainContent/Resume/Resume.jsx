@@ -1,6 +1,7 @@
 import React from 'react'
 import "../../../index.css";
-
+import WorkHistoryRoundedIcon from '@mui/icons-material/WorkHistoryRounded';
+import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
 
 const Resume = () => {
   return (
@@ -17,7 +18,7 @@ const Resume = () => {
 
       <div className="title-wrapper">
         <div className="icon-box">
-          <ion-icon name="book-outline"></ion-icon>
+        <WorkHistoryRoundedIcon/>
         </div>
 
         <h3 className="h3">Experience</h3>
@@ -90,7 +91,7 @@ const Resume = () => {
 
       <div className="title-wrapper">
         <div className="icon-box">
-          <ion-icon name="book-outline"></ion-icon>
+        <SchoolRoundedIcon/>
         </div>
 
         <h3 className="h3">Education</h3>
