@@ -2126,9 +2126,7 @@ textarea.form-input::-webkit-resizer {
 
 /* -----------------------  New Projects section -------------- */
 
-.all-projects {
-  padding: 2rem;
-}
+
 
 .project_box {
   display: flex;
@@ -2190,9 +2188,6 @@ textarea.form-input::-webkit-resizer {
 
 @media  screen and (max-width:900px) {
   
-.all-projects {
-  padding:1rem;
-}
 
 .project_box {
   display: flex;
@@ -2243,9 +2238,7 @@ textarea.form-input::-webkit-resizer {
 }
 @media  screen and (max-width:600px) {
   
-.all-projects {
-  padding:0;
-}
+
 
 .project_box {
   display: flex;
