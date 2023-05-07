@@ -1,6 +1,8 @@
 import React from "react";
 import "../../../index.css";
 import ProjectList from "../../../DataMap/Projects";
+import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
+import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
 
 const Portfolio = () => {
   return (
@@ -31,12 +33,12 @@ const Portfolio = () => {
                     <div className="project-link-btns">
                       <a target="_blank" href={liveLink}>
                         <button className="form-btn">
-                          <ion-icon name="eye-outline" /> Live Preview
+                          <OpenInNewRoundedIcon style={{width:"1.1rem"}}/> Live Preview
                         </button>
                       </a>
                       <a target="_blank" href={githubLink}>
                         <button className="form-btn">
-                          <ion-icon name="code-slash-outline" /> Source Code
+                        <CodeRoundedIcon style={{width:"1.1rem"}}/> Source Code
                         </button>
                       </a>
                     </div>

@@ -1,14 +1,61 @@
 import React from "react";
 import "../../index.css";
 
-import myavatar from "../../imgs/my-avatar.png"
+import myavatar from "../../imgs/my-avatar.png";
 import resume from "../../docs/Gaurav Soni Frontend Developer .pdf";
 import { Link } from "react-router-dom";
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+// import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
-import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
+import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
+
+const LinkList = [
+  {
+    id: 1,
+    icon: (
+      <>
+        <MailOutlineIcon style={{ width: "1rem" }} />
+      </>
+    ),
+    name: "Email",
+    link: "mailto:gauravsoni@gmail.com",
+  },
+  {
+    id: 2,
+    icon: (
+      <>
+        <GitHubIcon style={{ width: "1rem" }} />
+      </>
+    ),
+    name: "Github",
+    link: "https://github.com/gauravsoni97",
+  },
+  {
+    id: 3,
+    icon: (
+      <>
+        <LinkedInIcon style={{ width: "1rem" }} />
+      </>
+    ),
+    name: "Linkedin",
+    link: "https://www.linkedin.com/in/thegauravsoni/",
+  },
+  {
+    id: 4,
+    icon: (
+      <>
+        <WhatsAppIcon style={{ width: "1rem" }} />
+      </>
+    ),
+    name: "WhatsApp",
+    link: `https://api.whatsapp.com/send?phone=918053340056&amp;text=Thanks for
+        reaching out to us via WhatsApp. I’ll get back to you shortly`,
+  },
+ 
+];
 
 const Sidebar = () => {
   return (
@@ -37,65 +84,56 @@ const Sidebar = () => {
         <div className="sidebar-info_more">
           <div className="separator"></div>
 
-          <ul className="contacts-list">
-            <li className="contact-item">
-              <div className="icon-box">
-              <MailOutlineIcon/>
-              </div>
+          <ul className="">
+            {(LinkList || []).map((ele) => {
+              const { id, icon, name, link } = ele;
+              return (
+                <>
+                  <li
+                    key={id}
+                    className="links"
+                    style={{
+                      color: "hsl(45, 100%, 71%)",
+                      display: "flex",
+                      alignItems: "center",
+                      margin: ".6rem 0",
+                    }}
+                  >
+                    <span className="icon-style">{icon}</span>
 
-              <div className="contact-info">
-                <p className="contact-title">Email</p>
-
-                <a
-                  href="mailto:gauravsoni8414@gmail.com"
-                  className="contact-link"
-                >
-                  gauravsoni8414@gmail.com
-                </a>
-              </div>
-            </li>
-
-            <li className="contact-item">
-              <div className="icon-box">
-              <WhatsAppIcon/>
-              </div>
-
-              <div className="contact-info">
-                <p className="contact-title">Phone No.</p>
-                <a
-                  target="_blank"
-                  href="https://api.whatsapp.com/send?phone=918053340056&amp;text=Thanks for reaching out to us via WhatsApp. I’ll get back to you shortly
-        "
-                >
-                  <address>8053340056</address>
-                </a>
-              </div>
-            </li>
-            <li className="contact-item">
-              <div className="icon-box">
-              <LocationOnIcon/>
-              </div>
-
-              <div className="contact-info">
-                <p className="contact-title">Location</p>
-
-                <address>Rajasthan, India</address>
-              </div>
-            </li>
+                    <a
+                      target="_blank"
+                      href={link}
+                      style={{
+                        color: "hsla(0, 0%, 84%, 0.7)",
+                        fontSize: ".9rem",
+                        marginLeft: ".8rem",
+                      }}
+                    >
+                      {name}
+                    </a>
+                  </li>
+                </>
+              );
+            })}
           </ul>
 
           <div className="separator"></div>
           <div className="info-content">
-            <p className="title" style={{ display:"flex", alignItems:"center"}}>
-
-            <DownloadRoundedIcon style={{width:"16px"}}/>
-              <a href={resume} download style={{color:"white", marginLeft:".5rem"}}>
-              Download CV
+            <p
+              className="title"
+              style={{ display: "flex", alignItems: "center" }}
+            >
+              <DownloadRoundedIcon style={{ width: "16px" }} />
+              <a
+                href={resume}
+                download
+                style={{ color: "white", marginLeft: ".5rem" }}
+              >
+                Download CV
               </a>
-              </p>
+            </p>
           </div>
-
-          
         </div>
       </aside>
     </>
