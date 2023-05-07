@@ -9,6 +9,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 // import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
 
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 
@@ -57,10 +58,16 @@ const LinkList = [
  
 ];
 
+
+
+const showcontent = () =>{}
+
+
+
 const Sidebar = () => {
   return (
     <>
-      <aside className="sidebar" data-sidebar>
+      <aside className="sidebar" >
         <div className="sidebar-info">
           <figure className="avatar-box">
             <img src={myavatar} alt="Gaurav Soni" width="80px" />
@@ -73,18 +80,12 @@ const Sidebar = () => {
 
             <p className="title">Frontend Web Developer</p>
           </div>
-
-          <button className="info_more-btn">
-            <span>Show Contacts</span>
-
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
         </div>
 
         <div className="sidebar-info_more">
           <div className="separator"></div>
 
-          <ul className="">
+          <ul className="linklistmenu">
             {(LinkList || []).map((ele) => {
               const { id, icon, name, link } = ele;
               return (
@@ -109,6 +110,7 @@ const Sidebar = () => {
                         fontSize: ".9rem",
                         marginLeft: ".8rem",
                       }}
+                      className="linkname"
                     >
                       {name}
                     </a>
@@ -119,7 +121,7 @@ const Sidebar = () => {
           </ul>
 
           <div className="separator"></div>
-          <div className="info-content">
+          <div className="info-content downloadresume">
             <p
               className="title"
               style={{ display: "flex", alignItems: "center" }}

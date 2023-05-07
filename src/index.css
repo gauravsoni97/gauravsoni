@@ -316,9 +316,10 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
+  /* max-height: 112px; */
   overflow: hidden;
   transition: var(--transition-2);
+  min-width: 20vw;
 }
 
 .sidebar.active {
@@ -394,8 +395,6 @@ main {
 }
 
 .sidebar-info_more {
-  opacity: 0;
-  visibility: hidden;
   transition: var(--transition-2);
 }
 
@@ -2006,6 +2005,41 @@ textarea.form-input::-webkit-resizer {
   .avatar-box img {
     padding: 0.2rem;
     border-radius: 20px !important;
+  }
+
+  .linklistmenu{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+  }
+  .linklistmenu .links span::before{
+    inset: 0.5px;
+  }
+  .linklistmenu .links span{
+    width: 17vw;
+  }
+  .linklistmenu .links{
+    margin: 0 0 !important;
+  }
+  .linklistmenu .linkname{
+    display: none;
+    margin: 0;
+  }
+  .separator{
+    margin: .8rem 0;
+  }
+  .downloadresume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .downloadresume .title{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
 }
 
