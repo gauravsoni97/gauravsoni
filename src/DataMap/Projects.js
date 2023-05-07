@@ -20,8 +20,11 @@ const ProjectList = [
     image: "./projects/moneymanagement.png",
     tag: "HTML",
     title: "Money Management",
-    description:
-      "The Money Management tool is a web-based application that helps users manage their finances based on the 50-30-20 rule of budgeting.",
+    description:<>I have created the Money Management Tool, a web-based application that helps users manage their finances
+    based on the 50-30-20 rule of budgeting. Users can edit and delete existing notes, and the application provides
+    data storage to keep track of the user's financial history and progress over time. Through the development of this
+    application, I have gained expertise in web development, data storage.
+    </>,
     liveLink: "https://moneymanagement.netlify.app/",
     githubLink: "https://github.com/gauravsoni97",
   },
