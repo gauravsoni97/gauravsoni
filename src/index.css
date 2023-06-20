@@ -1998,7 +1998,7 @@ textarea.form-input::-webkit-resizer {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .avatar-box {
     border-radius: 20px;
   }
@@ -2022,7 +2022,7 @@ textarea.form-input::-webkit-resizer {
   .linklistmenu .links{
     margin: 0 0 !important;
   }
-  .linklistmenu .linkname{
+  .linklistmenu .inmobText{
     display: none;
     margin: 0;
   }

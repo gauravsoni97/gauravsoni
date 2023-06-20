@@ -9,7 +9,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 // import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
+import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
 
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 
@@ -55,19 +55,14 @@ const LinkList = [
     link: `https://api.whatsapp.com/send?phone=918053340056&amp;text=Thanks for
         reaching out to us via WhatsApp. I’ll get back to you shortly`,
   },
- 
 ];
 
-
-
-const showcontent = () =>{}
-
-
+const showcontent = () => {};
 
 const Sidebar = () => {
   return (
     <>
-      <aside className="sidebar" >
+      <aside className="sidebar">
         <div className="sidebar-info">
           <figure className="avatar-box">
             <img src={myavatar} alt="Gaurav Soni" width="80px" />
@@ -90,31 +85,33 @@ const Sidebar = () => {
               const { id, icon, name, link } = ele;
               return (
                 <>
-                  <li
-                    key={id}
-                    className="links"
+                  <a
+                    target="_blank"
+                    href={link}
                     style={{
-                      color: "hsl(45, 100%, 71%)",
-                      display: "flex",
-                      alignItems: "center",
-                      margin: ".6rem 0",
+                      color: "hsla(0, 0%, 84%, 0.7)",
+                      fontSize: ".9rem",
+                      marginLeft: ".8rem",
                     }}
+                    className="linkname"
                   >
-                    <span className="icon-style">{icon}</span>
-
-                    <a
-                      target="_blank"
-                      href={link}
+                    <span
+                      key={id}
+                      className="links"
                       style={{
-                        color: "hsla(0, 0%, 84%, 0.7)",
-                        fontSize: ".9rem",
-                        marginLeft: ".8rem",
+                        color: "hsl(45, 100%, 71%)",
+                        display: "flex",
+                        alignItems: "center",
+                        margin: ".6rem 0",
                       }}
-                      className="linkname"
                     >
+                      <span className="icon-style">{icon}</span>
+<p style={{color:'gray', marginLeft:'1rem'}} className="inmobText">
+
                       {name}
-                    </a>
-                  </li>
+</p>
+                    </span>
+                  </a>
                 </>
               );
             })}
