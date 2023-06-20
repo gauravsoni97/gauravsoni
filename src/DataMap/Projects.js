@@ -30,7 +30,7 @@ const ProjectList = [
   },
   {
     id: 3,
-    image: "./projects/macosui2.png",
+    image: "./projects/macosui.jpg",
     tag: "HTML",
     title: "macOS UI Clone",
     description: (
