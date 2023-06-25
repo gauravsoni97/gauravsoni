@@ -13,7 +13,7 @@ const Portfolio = () => {
       <section className="projects">
         {/*------------ all projects here to show --------------*/}
         <div className="all-projects">
-          {(ProjectList || []).map((ele) => {
+          {ProjectList?.sort((a, b) => b.id - a.id).map((ele) => {
             const { id, image, tag, title, description, liveLink, githubLink } =
               ele;
             return (

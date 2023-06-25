@@ -2,7 +2,7 @@ import React from "react";
 import "../../index.css";
 
 import myavatar from "../../imgs/my-avatar.png";
-import resume from "../../docs/Gaurav Soni Frontend Developer .pdf";
+import resume from "../../docs/Gaurav Soni Frontend Developer.pdf";
 import { Link } from "react-router-dom";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
