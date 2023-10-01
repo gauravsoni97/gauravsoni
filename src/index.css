@@ -2382,5 +2382,7 @@ textarea.form-input::-webkit-resizer {
     margin:0;
     margin-top: .5rem;
   }
-  
+  .navbar-list{
+    gap: 1rem;
+  }
 }

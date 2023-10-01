@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../../index.css";
 
 import Skills from "./Skills";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <article className="about  active" data-page="about">
@@ -31,11 +34,7 @@ const About = () => {
         </p>
       </section>
 
-   
-
-      <Skills/>
-    
-     
+      <Skills />
     </article>
   );
 };

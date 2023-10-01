@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../../index.css";
 import ProjectList from "../../../DataMap/Projects";
-import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
-import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
+import OpenInNewRoundedIcon from "@mui/icons-material/OpenInNewRounded";
+import CodeRoundedIcon from "@mui/icons-material/CodeRounded";
 
 const Portfolio = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <article className="portfolio" data-page="portfolio">
       <header>
@@ -22,10 +25,7 @@ const Portfolio = () => {
                   <div
                     className="project_img1 project_img"
                     style={{ backgroundImage: `URL(${image})` }}
-                  >
-        
-
-                  </div>
+                  ></div>
                   <div className="project-desc">
                     <h2>{title}</h2>
                     <p className="timeline-text">{description}</p>
@@ -33,12 +33,14 @@ const Portfolio = () => {
                     <div className="project-link-btns">
                       <a target="_blank" href={liveLink}>
                         <button className="form-btn">
-                          <OpenInNewRoundedIcon style={{width:"1.1rem"}}/> Live Preview
+                          <OpenInNewRoundedIcon style={{ width: "1.1rem" }} />{" "}
+                          Live Preview
                         </button>
                       </a>
                       <a target="_blank" href={githubLink}>
                         <button className="form-btn">
-                        <CodeRoundedIcon style={{width:"1.1rem"}}/> Source Code
+                          <CodeRoundedIcon style={{ width: "1.1rem" }} /> Source
+                          Code
                         </button>
                       </a>
                     </div>

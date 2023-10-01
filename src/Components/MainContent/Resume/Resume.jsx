@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../../index.css";
 import WorkHistoryRoundedIcon from "@mui/icons-material/WorkHistoryRounded";
 import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
 import { CompanyData } from "../../../DataMap/CompaniesExp";
 
 const Resume = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <article className="resume">
       <header>
