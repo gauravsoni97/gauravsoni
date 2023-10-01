@@ -1,15 +1,24 @@
 import React from "react";
 import SkillsData from "../../../DataMap/Skills";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
     <section className="skill">
-      <h3 className="h3 skills-title">Tech Stacks I Use</h3>
+      <motion.h3
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        className="h3 skills-title"
+      >
+        Tech Stacks I Use
+      </motion.h3>
       <ul className="skills-list content-card">
         {SkillsData.map((skill) => (
           <li className="skills-item" key={skill.id}>
             <figure className="skills_avatar">
-              <img
+              <motion.img
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 src={skill.SkillImage}
                 alt={skill.SkillName}
                 width={50}
@@ -17,9 +26,13 @@ const Skills = () => {
                 data-testimonials-avatar
               />
             </figure>
-            <div className="skills-content-box">
+            <motion.div
+              className="skills-content-box"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+            >
               <h4 className="h4 skills-item-title">{skill.SkillName}</h4>
-            </div>
+            </motion.div>
           </li>
         ))}
       </ul>

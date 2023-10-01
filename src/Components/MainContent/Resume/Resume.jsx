@@ -3,6 +3,7 @@ import "../../../index.css";
 import WorkHistoryRoundedIcon from "@mui/icons-material/WorkHistoryRounded";
 import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
 import { CompanyData } from "../../../DataMap/CompaniesExp";
+import { motion } from "framer-motion";
 
 const Resume = () => {
   useEffect(() => {
@@ -10,20 +11,28 @@ const Resume = () => {
   }, []);
   return (
     <article className="resume">
-      <header>
+      <motion.header initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
         <h2 className="h2 article-title">Work Experience</h2>
-      </header>
+      </motion.header>
 
       <section className="timeline">
-        <div className="title-wrapper">
+        <motion.div
+          className="title-wrapper"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+        >
           <div className="icon-box">
             <WorkHistoryRoundedIcon />
           </div>
 
           <h3 className="h3">Experience</h3>
-        </div>
+        </motion.div>
 
-        <ul className="timeline-list">
+        <motion.ul
+          className="timeline-list"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+        >
           {CompanyData.map((ele) => {
             return (
               <>
@@ -39,10 +48,14 @@ const Resume = () => {
               </>
             );
           })}
-        </ul>
+        </motion.ul>
       </section>
 
-      <section className="timeline">
+      <motion.section
+        className="timeline"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+      >
         <div className="title-wrapper">
           <div className="icon-box">
             <SchoolRoundedIcon />
@@ -78,7 +91,7 @@ const Resume = () => {
             </p>
           </li>
         </ol>
-      </section>
+      </motion.section>
     </article>
   );
 };

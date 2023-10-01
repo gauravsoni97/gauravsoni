@@ -12,6 +12,7 @@ import KeyboardArrowUpRoundedIcon from "@mui/icons-material/KeyboardArrowUpRound
 import WavingHandIcon from "@mui/icons-material/WavingHand";
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 import { useMediaQuery } from "react-responsive";
+import { motion } from "framer-motion";
 
 const LinkList = [
   {
@@ -73,6 +74,8 @@ const Sidebar = () => {
   useEffect(() => {
     if (!isMobileDevice) {
       setShowMenu(false);
+    } else {
+      setShowMenu(true);
     }
   }, [isMobileDevice]);
 
@@ -90,10 +93,20 @@ const Sidebar = () => {
         )}
         <div className="sidebar-info">
           <figure className="avatar-box">
-            <img src={myavatar} alt="Gaurav Soni" width="80px" />
+            <motion.img
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              src={myavatar}
+              alt="Gaurav Soni"
+              width="80px"
+            />
           </figure>
 
-          <div className="info-content">
+          <motion.div
+            className="info-content"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+          >
             <h1
               style={{ marginBottom: ".3rem" }}
               className="name"
@@ -105,7 +118,11 @@ const Sidebar = () => {
             <p style={{ color: "gray", fontSize: ".8rem" }}>
               Frontend Web Developer
             </p>
-            <div className="sayHiSidebar">
+            <motion.div
+              className="sayHiSidebar"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+            >
               <a
                 href={"mailto:gauravsoni8414@gmail.com"}
                 style={{
@@ -119,11 +136,15 @@ const Sidebar = () => {
                 <WavingHandIcon style={{ width: "16px", color: "#ffda6b" }} />
                 Say Hello !
               </a>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
         {!showMenu && (
-          <div className="sidebar-info_more">
+          <motion.div
+            className="sidebar-info_more"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+          >
             <div
               className="separator"
               style={{
@@ -193,7 +214,7 @@ const Sidebar = () => {
                 </a>
               </p>
             </div>
-          </div>
+          </motion.div>
         )}
       </aside>
     </>

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "../../../index.css";
 
 import Skills from "./Skills";
+import { motion } from "framer-motion";
 
 const About = () => {
   useEffect(() => {
@@ -9,11 +10,18 @@ const About = () => {
   }, []);
 
   return (
-    <article className="about  active" data-page="about">
-      <header>
+    <article
+      className="about  active"
+      data-page="about"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+    >
+      <motion.header initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}>
         <h2 className="h2 article-title">About me</h2>
-      </header>
-      <section className="about-text">
+      </motion.header>
+      <motion.section className="about-text" initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}>
         <p>
           Hello! My name is Gaurav Soni and I am a frontend web developer from
           Rajasthan, India. I have more than 3+ years of experience working with
@@ -32,7 +40,7 @@ const About = () => {
           up-to-date with the latest trends in web development. I am always
           looking for new challenges and opportunities to grow as a developer.
         </p>
-      </section>
+      </motion.section>
 
       <Skills />
     </article>
