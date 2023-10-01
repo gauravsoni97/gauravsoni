@@ -27,10 +27,12 @@ const Portfolio = () => {
               ele;
             return (
               <div className="project_box  service-item " key={id}>
-                <div
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
                   className="project_img1 project_img"
                   style={{ backgroundImage: `URL(${image})` }}
-                ></div>
+                ></motion.div>
                 <div className="project-desc">
                   <h2>{title}</h2>
                   <p className="timeline-text">{description}</p>
