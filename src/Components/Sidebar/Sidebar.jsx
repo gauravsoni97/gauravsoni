@@ -67,7 +67,7 @@ const Sidebar = () => {
   };
 
   useEffect(() => {
-    setShowMenu(false);
+    setShowMenu(true);
   }, []);
 
   useEffect(() => {
