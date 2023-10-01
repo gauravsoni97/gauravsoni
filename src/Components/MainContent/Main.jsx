@@ -15,7 +15,7 @@ const Main = () => {
         <Route exact path="/" element={<About />} />
         <Route exact path="/resume" element={<Resume />} />
         <Route exact path="/portfolio" element={<Portfolio />} />
-        <Route exact path="/contact" element={<Contact />} />
+        {/* <Route exact path="/contact" element={<Contact />} /> */}
       </Routes>
     </div>
   );
