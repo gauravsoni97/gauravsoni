@@ -8,6 +8,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
+import KeyboardArrowUpRoundedIcon from "@mui/icons-material/KeyboardArrowUpRounded";
 import WavingHandIcon from "@mui/icons-material/WavingHand";
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 import { useMediaQuery } from "react-responsive";
@@ -57,7 +58,7 @@ const LinkList = [
 ];
 
 const Sidebar = () => {
-  const isMobileDevice = useMediaQuery({ query: "(max-width: 650px)" });
+  const isMobileDevice = useMediaQuery({ query: "(max-width: 1250px)" });
 
   const [showMenu, setShowMenu] = useState(false);
 
@@ -66,18 +67,27 @@ const Sidebar = () => {
   };
 
   useEffect(() => {
-    if (!showMenu) {
-      setShowMenu(true);
+    setShowMenu(false);
+  }, []);
+
+  useEffect(() => {
+    if (!isMobileDevice) {
+      setShowMenu(false);
     }
-    console.log("useEffect running");
   }, [isMobileDevice]);
 
   return (
     <>
       <aside className="sidebar">
-        <span className="showMenuIcon" onClick={toggleMenu}>
-          <ExpandMoreRoundedIcon style={{ fontSize: "1.2rem" }} />
-        </span>
+        {isMobileDevice && (
+          <span className="showMenuIcon" onClick={toggleMenu}>
+            {showMenu ? (
+              <ExpandMoreRoundedIcon style={{ fontSize: "1.2rem" }} />
+            ) : (
+              <KeyboardArrowUpRoundedIcon style={{ fontSize: "1.2rem" }} />
+            )}
+          </span>
+        )}
         <div className="sidebar-info">
           <figure className="avatar-box">
             <img src={myavatar} alt="Gaurav Soni" width="80px" />
