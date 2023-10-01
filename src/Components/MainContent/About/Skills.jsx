@@ -13,12 +13,12 @@ const Skills = () => {
                 src={skill.SkillImage}
                 alt={skill.SkillName}
                 width={50}
+                style={skill.imgStyle}
                 data-testimonials-avatar
               />
             </figure>
             <div className="skills-content-box">
               <h4 className="h4 skills-item-title">{skill.SkillName}</h4>
-              <p className="skills-item-text">{skill.SkillType}</p>
             </div>
           </li>
         ))}
