@@ -69,11 +69,11 @@ const Sidebar = () => {
           </figure>
 
           <div className="info-content">
-            <h1 className="name" title="Gaurav Soni">
+            <h1 style={{marginBottom:".3rem"}} className="name" title="Gaurav Soni">
               Gaurav Soni
             </h1>
 
-            <p className="title">Frontend Web Developer</p>
+            <p style={{color:"gray", fontSize:".8rem"}}>Frontend Web Developer</p>
           </div>
         </div>
 
