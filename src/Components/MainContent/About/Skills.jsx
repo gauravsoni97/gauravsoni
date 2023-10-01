@@ -10,10 +10,12 @@ import wordpress from "../../../imgs/skills/Wordpress.png"
 import react from "../../../imgs/skills/React.png"
 
 const Skills = () => {
+  
   return (
     <section className="skill">
         <h3 className="h3 skills-title">Tech Stacks I Use</h3>
         <ul className="skills-list content-card">
+
           <li className="skills-item">
             <figure className="skills_avatar">
               <img

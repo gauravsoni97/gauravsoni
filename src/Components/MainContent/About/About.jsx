@@ -13,10 +13,10 @@ const About = () => {
       <section className="about-text">
         <p>
           Hello! My name is Gaurav Soni and I am a frontend web developer from
-          Rajasthan, India. I have more than 2 years of experience working with
-          HTML, CSS, JavaScript, Bootstrap,React.js and other fronend
+          Rajasthan, India. I have more than 3+ years of experience working with
+          HTML, CSS, JavaScript, Bootstrap, ReactJs and other fronend
           development technologies. Currently, I am expanding my skills by
-          learning Next.js.
+          learning NextJs.
         </p>
         <p>
           I am passionate about web development and enjoy collaborating with
