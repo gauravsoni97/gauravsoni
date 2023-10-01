@@ -1998,6 +1998,11 @@ textarea.form-input::-webkit-resizer {
   }
 }
 
+.linklistmenu{
+  margin: 1.5rem 0;
+}
+
+
 @media screen and (max-width: 900px) {
   .avatar-box {
     border-radius: 20px;

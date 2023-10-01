@@ -21,8 +21,8 @@ const LinkList = [
         <MailOutlineIcon style={{ width: "1rem" }} />
       </>
     ),
-    name: "Email",
-    link: "mailto:gauravsoni@gmail.com",
+    name: "Click to E-Mail",
+    link: "mailto:gauravsoni8414@gmail.com",
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const LinkList = [
         <GitHubIcon style={{ width: "1rem" }} />
       </>
     ),
-    name: "Github",
+    name: "Github Profile",
     link: "https://github.com/gauravsoni97",
   },
   {
@@ -41,7 +41,7 @@ const LinkList = [
         <LinkedInIcon style={{ width: "1rem" }} />
       </>
     ),
-    name: "Linkedin",
+    name: "Linkedin Profile",
     link: "https://www.linkedin.com/in/gauravsoni97/",
   },
   {
@@ -57,8 +57,6 @@ const LinkList = [
   },
 ];
 
-const showcontent = () => {};
-
 const Sidebar = () => {
   return (
     <>
@@ -69,16 +67,28 @@ const Sidebar = () => {
           </figure>
 
           <div className="info-content">
-            <h1 style={{marginBottom:".3rem"}} className="name" title="Gaurav Soni">
+            <h1
+              style={{ marginBottom: ".3rem" }}
+              className="name"
+              title="Gaurav Soni"
+            >
               Gaurav Soni
             </h1>
 
-            <p style={{color:"gray", fontSize:".8rem"}}>Frontend Web Developer</p>
+            <p style={{ color: "gray", fontSize: ".8rem" }}>
+              Frontend Web Developer
+            </p>
           </div>
         </div>
 
         <div className="sidebar-info_more">
-          <div className="separator"></div>
+          <div
+            className="separator"
+            style={{
+              maxWidth: `calc(100% - 2rem)`,
+              margin: "1rem auto",
+            }}
+          ></div>
 
           <ul className="linklistmenu">
             {(LinkList || []).map((ele) => {
@@ -119,7 +129,13 @@ const Sidebar = () => {
             })}
           </ul>
 
-          <div className="separator"></div>
+          <div
+            className="separator"
+            style={{
+              maxWidth: `calc(100% - 2rem)`,
+              margin: "1rem auto",
+            }}
+          ></div>
           <div className="info-content downloadresume">
             <p
               className="title"
