@@ -42,7 +42,7 @@ const LinkList = [
       </>
     ),
     name: "Linkedin",
-    link: "https://www.linkedin.com/in/thegauravsoni/",
+    link: "https://www.linkedin.com/in/gauravsoni97/",
   },
   {
     id: 4,
