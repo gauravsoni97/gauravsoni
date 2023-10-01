@@ -1,134 +1,83 @@
-import React from 'react'
+import React from "react";
 import "../../../index.css";
-import WorkHistoryRoundedIcon from '@mui/icons-material/WorkHistoryRounded';
-import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
+import WorkHistoryRoundedIcon from "@mui/icons-material/WorkHistoryRounded";
+import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
+import { CompanyData } from "../../../DataMap/CompaniesExp";
 
 const Resume = () => {
   return (
-    
-    <article className="resume" >
+    <article className="resume">
+      <header>
+        <h2 className="h2 article-title">Work Experience</h2>
+      </header>
 
-    <header>
-      <h2 className="h2 article-title">Work Experience</h2>
-    </header>
+      <section className="timeline">
+        <div className="title-wrapper">
+          <div className="icon-box">
+            <WorkHistoryRoundedIcon />
+          </div>
 
-
-
-    <section className="timeline">
-
-      <div className="title-wrapper">
-        <div className="icon-box">
-        <WorkHistoryRoundedIcon/>
+          <h3 className="h3">Experience</h3>
         </div>
 
-        <h3 className="h3">Experience</h3>
-      </div>
+        <ul className="timeline-list">
+          {CompanyData.map((ele) => {
+            return (
+              <>
+                <li className="timeline-item">
+                  <h4 className="h4 timeline-item-title">{ele.CompanyTitle}</h4>
 
-      <ol className="timeline-list">
+                  <span> {ele.CompanyTiming}</span>
 
-        <li className="timeline-item">
+                  <ul>
+                    <li className="timeline-text">{ele.CompanyDesc}</li>
+                  </ul>
+                </li>
+              </>
+            );
+          })}
+        </ul>
+      </section>
 
-          <h4 className="h4 timeline-item-title">Connectlab - React js Developer</h4>
+      <section className="timeline">
+        <div className="title-wrapper">
+          <div className="icon-box">
+            <SchoolRoundedIcon />
+          </div>
 
-          <span>Oct 2021 — Present</span>
-
-          <ul>
-            <li className="timeline-text">
-              Developed and maintained websites using HTML, CSS, ReactJs,
-              and other front-end development technologies
-            </li>
-            <li className="timeline-text">
-              Collaborated with designers and implemented responsive
-              designs and pixel-perfect layouts of websites
-            </li>
-            <li className="timeline-text">
-              Developed and maintained reusable components using ReactJS.
-            </li>
-            <li className="timeline-text">
-              Optimized web pages for performance and ensured crossbrowser compatibility and ensured that they load
-              quickly
-            </li>
-            <li className="timeline-text">
-              Utilized Git for version control and collaborated with other
-              developers on code reviews
-            </li>
-          </ul>
-
-
-
-        </li>
-
-        <li className="timeline-item">
-
-          <h4 className="h4 timeline-item-title">Collaberus Technologies - Frontend Web Developer</h4>
-
-          <span>Feb 2021 — May 2021</span>
-
-          <ul>
-            <li className="timeline-text">
-              Developed and maintained websites using HTML, CSS, JavaScript,
-              and other front-end development technologies
-            </li>
-            <li className="timeline-text">
-              Ensured that the web pages and applications are fully responsive and optimized for different devices
-              and browsers
-            </li>
-            <li className="timeline-text">
-              Developed and maintained reusable components using ReactJS.
-            </li>
-            <li className="timeline-text">
-              Collaborated with designers and back-end developers to
-              implement new features and functionalities
-            </li>
-          </ul>
-        </li>
-      </ol>
-
-    </section>
-
-
-    <section className="timeline">
-
-      <div className="title-wrapper">
-        <div className="icon-box">
-        <SchoolRoundedIcon/>
+          <h3 className="h3">Education</h3>
         </div>
 
-        <h3 className="h3">Education</h3>
-      </div>
+        <ol className="timeline-list">
+          <li className="timeline-item">
+            <h4 className="h4 timeline-item-title">
+              JCD Memorial College, Sirsa
+            </h4>
 
-      <ol className="timeline-list">
+            <span>2017 — 2020</span>
 
-        <li className="timeline-item">
+            <p className="timeline-text">
+              I acquired a 70% grade in my bachelor's degree in science from JCD
+              Memorial College.
+            </p>
+          </li>
 
-          <h4 className="h4 timeline-item-title">JCD Memorial College, Sirsa</h4>
+          <li className="timeline-item">
+            <h4 className="h4 timeline-item-title">
+              CH. Harpal Singh Convet SR. Sec School, Ellenabad
+            </h4>
 
-          <span>2017 — 2020</span>
+            <span>Upto 2017</span>
 
-          <p className="timeline-text">
-            I acquired a 70% grade in my bachelor's degree in science from JCD Memorial College.
-          </p>
+            <p className="timeline-text">
+              I was a bright student in school and typically received 80% or
+              higher in every class.
+            </p>
+          </li>
+        </ol>
+      </section>
+    </article>
+  );
+};
 
-        </li>
-
-        <li className="timeline-item">
-
-          <h4 className="h4 timeline-item-title">CH. Harpal Singh Convet SR. Sec School, Ellenabad</h4>
-
-          <span>Upto 2017</span>
-
-          <p className="timeline-text">
-            I was a bright student in school and typically received 80% or higher in every class.
-          </p>
-
-        </li>
-
-      </ol>
-
-    </section>
-
-  </article>
-  )
-}
-
-export default Resume
+export default Resume;
