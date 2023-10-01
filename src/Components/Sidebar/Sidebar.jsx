@@ -10,6 +10,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
+import WavingHandIcon from '@mui/icons-material/WavingHand';
 
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 
@@ -78,6 +79,21 @@ const Sidebar = () => {
             <p style={{ color: "gray", fontSize: ".8rem" }}>
               Frontend Web Developer
             </p>
+          <div className="sayHiSidebar">
+            <a
+              href={"mailto:gauravsoni8414@gmail.com"}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: ".5rem",
+                color: "#fff",
+              }}
+            >
+              <WavingHandIcon style={{ width: "16px", color:"#ffda6b" }} />
+              Say Hello !
+            </a>
+          </div>
           </div>
         </div>
 

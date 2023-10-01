@@ -2365,3 +2365,22 @@ textarea.form-input::-webkit-resizer {
   z-index: -1;
 }
 
+
+.sayHiSidebar{
+  color: var(--white-1);
+  background: var(--onyx);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  width: max-content;
+  padding: 3px 12px;
+  border-radius: 8px;
+  margin: 1rem auto 0;
+}
+
+@media screen and (width <= 600px) {
+  .sayHiSidebar{
+    margin:0;
+    margin-top: .5rem;
+  }
+  
+}
