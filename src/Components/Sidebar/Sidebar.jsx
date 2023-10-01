@@ -106,10 +106,12 @@ const Sidebar = () => {
                       }}
                     >
                       <span className="icon-style">{icon}</span>
-<p style={{color:'gray', marginLeft:'1rem'}} className="inmobText">
-
-                      {name}
-</p>
+                      <p
+                        style={{ color: "gray", marginLeft: "1rem" }}
+                        className="inmobText"
+                      >
+                        {name}
+                      </p>
                     </span>
                   </a>
                 </>
