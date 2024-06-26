@@ -1,6 +1,16 @@
 export const CompanyData = [
   {
     id: 1,
+    CompanyTitle: "Accolite Digital",
+    CompanyTiming: "Feb 2024 — Present",
+    CompanyDesc: (
+      <>
+        Currently working in AngularJs Project in Healthcare Domain.
+      </>
+    ),
+  },
+  {
+    id: 3,
     CompanyTitle: "Collaberus Technologies - Frontend Web Developer",
     CompanyTiming: "Feb 2021 — May 2021",
     CompanyDesc: (
@@ -15,7 +25,7 @@ export const CompanyData = [
   {
     id: 2,
     CompanyTitle: "Connectlab - Junior ReactJs Developer",
-    CompanyTiming: "Oct 2021 — Present",
+    CompanyTiming: "Oct 2021 — Feb 2024",
     CompanyDesc: (
       <>
         As a Junior ReactJs Developer at Connectlab since October 2021, I've

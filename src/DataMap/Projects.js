@@ -95,5 +95,18 @@ const ProjectList = [
     liveLink: "https://generatestrongpassword.netlify.app/",
     githubLink: "https://github.com/gauravsoni97/passwordgenerator",
   },
+  {
+    id: 7,
+    image: "./projects/sparkl.png",
+    tag: "ReactJs",
+    title: "Sparkl Assignement",
+    description: (
+      <>
+      Developed sparkl assignement website using React, HTML/CSS, animations, text effects, and a streamlined video call UI. 
+      </>
+    ),
+    liveLink: "https://sparklgaurav.netlify.app/",
+    githubLink: "https://github.com/gauravsoni97/sparklAssignment",
+  },
 ];
 export default ProjectList;

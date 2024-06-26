@@ -10,7 +10,7 @@ const Skills = () => {
         whileInView={{ opacity: 1 }}
         className="h3 skills-title"
       >
-        Tech Stacks I Use
+        Skills
       </motion.h3>
       <ul className="skills-list content-card">
         {SkillsData.map((skill) => (
