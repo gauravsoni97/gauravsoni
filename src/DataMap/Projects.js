@@ -1,20 +1,5 @@
 const ProjectList = [
-  {
-    id: 1,
-    image: "./projects/googlekeepclone.png",
-    tag: "HTML",
-    title: "Google Keep Clone",
-    description: (
-      <>
-        I have designed and developed a note-taking web application using
-        ReactJs, which mimics the exact user interface of popular note-taking
-        apps. This app allows users to create, edit and organize notes in a
-        visually appealing and user-friendly environment.
-      </>
-    ),
-    liveLink: "https://googlekeepapp.netlify.app/",
-    githubLink: "https://github.com/gauravsoni97/googlekeepclone",
-  },
+
   {
     id: 2,
     image: "./projects/moneymanagement.png",
